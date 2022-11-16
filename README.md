@@ -25,14 +25,22 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
-
+// .map iterates over every index of an array and performs a function on each index. it returns a new array.
+// .reduce collects the information in each index one at at time, combines it with information from the previous index using an accumulator, and returns the combined final result after iterating through each index.
+// .filter takes an equation from a function, iterates through every index, and checks to see if the index matches the result. if it does, the result is added to a new array. if not it is excluded from the new array  
 2. Explain the difference between a callback and a higher order function.
+// a higher order function is a function that takes a callback function as a parameter. a callback function is the function that is used as a parameter in the higher order functino.
 
 3. Explain what a closure is.
+//closure is the ability nest off information from outer levels. the inner levels can reach the outer levels for information, but the outer levels can't reach the inner levels. This allows us to close off certain functions that can store specific information 
 
 4. Describe the four principles of the 'this' keyword.
-
+//window bound - this is window bound, meaning if it isn't bound to anything else it will be bound to the window
+//implicit bound - this is bound implicitly through dot notation to the object left of the dot
+//new bound - with constructor functions, the new keyword binds this to the object created by the constructor function
+//explicit bound - you can use call, gind, and apply to bind this explicitly 
 5. Why do we need super() in an extended class?
+//super calls up to the parent class to retrieve its attributes that will be inherited by the new class
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 

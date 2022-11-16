@@ -15,8 +15,7 @@ function myFunction() {
 }
 //myFunction();
 
-//🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+//🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: nestedFunction can reach outside of itself to find the variable it needs to execute, but it is a one way street. Outer functions cannot access information in the nestedFunction 
 
 
 
@@ -30,10 +29,16 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+function summation(number) {
+  let sum = 0;
+  for (let i = 0; i <= number; i++) {
+    sum += i;
+  }
+  return sum;
 
   }
+
+  console.log(summation(4));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
